@@ -3,12 +3,11 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoComponent } from './components/todo/todo.component';
 import { HeaderComponent } from './components/header/header.component';
-import { InputComponent } from './components/input/input.component';
+import { TodoComponent } from './components/todo/todo.component';
 
 @NgModule({
-  declarations: [AppComponent, TodoComponent, HeaderComponent, InputComponent],
+  declarations: [AppComponent, TodoComponent, HeaderComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

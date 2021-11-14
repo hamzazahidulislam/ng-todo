@@ -25,6 +25,14 @@ export class TodoComponent implements OnInit {
         title: 'Javascript',
         isCompleted: false,
       },
+      {
+        title: 'Nodejs',
+        isCompleted: true,
+      },
+      {
+        title: 'Typescript',
+        isCompleted: true,
+      },
     ];
   }
 
@@ -40,5 +48,8 @@ export class TodoComponent implements OnInit {
       isCompleted: false,
     });
     this.inputValue = '';
+  }
+  getCompleted(): Todo[] {
+    return this.todos.filter((todo) => todo.isCompleted);
   }
 }
